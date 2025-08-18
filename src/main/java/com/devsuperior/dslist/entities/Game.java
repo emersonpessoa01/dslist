@@ -16,7 +16,7 @@ public class Game {
     private Integer year;
     private String genre;
     private String platform;
-    private String imaUrl;
+    private String imgUrl;
     private String ShortDescription;
     private String LongDescription;
 
@@ -29,7 +29,7 @@ public class Game {
         this.year = year;
         this.genre = genre;
         this.platform = platform;
-        this.imaUrl = imaUrl;
+        this.imgUrl = imaUrl;
         this.ShortDescription = shortDescription;
         LongDescription = longDescription;
     }
@@ -75,11 +75,11 @@ public class Game {
     }
 
     public String getImaUrl() {
-        return imaUrl;
+        return imgUrl;
     }
 
-    public void setImaUrl(String imaUrl) {
-        this.imaUrl = imaUrl;
+    public void setImaUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public String getShortDescription() {
