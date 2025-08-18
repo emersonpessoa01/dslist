@@ -20,6 +20,9 @@ public class Game {
     private String ShortDescription;
     private String LongDescription;
 
+    public Game() {
+    }
+
     public Game(Long id, String title, Integer year, String genre, String platform, String imaUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
