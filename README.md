@@ -104,9 +104,12 @@ java.runtime.version=21
 
 📦 Importação da coleção de testes no Insomnia:
 
-[Download da coleção](api-collections/Insomnia_2025-10-05.yaml)
+[Download da coleção](./api-collections/Insomnia_2025-10-05.yaml)
 
 path:
+
+```
+./api-collections/Insomnia_2025-10-05.yaml
 
 ```
 
