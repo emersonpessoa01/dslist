@@ -100,7 +100,6 @@ spring.jpa.hibernate.ddl-auto=none
 ```
 java.runtime.version=21
 ```
-```
 
 📦 Importação da coleção de testes no Insomnia:
 
@@ -109,7 +108,7 @@ java.runtime.version=21
 path:
 
 ```
-./api-collections/Insomnia_2025-10-05.yaml
+./api-collections/Insomnia_2025-09-05.yaml
 
 ```
 
