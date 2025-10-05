@@ -98,7 +98,16 @@ spring.jpa.hibernate.ddl-auto=none
 
 ### system.properties
 ```
-java.runtime.version=17
+java.runtime.version=21
+```
+```
+
+📦 Importação da coleção de testes no Insomnia:
+
+[Download da coleção](api-collections/Insomnia_2025-10-05.yaml)
+
+path:
+
 ```
 
 ### WebConfig
