@@ -6,17 +6,17 @@ import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-//Anotação - Representa o encapsulando dois atrbutos em uma classe
-//Classe auxiliar para representar a chave primaria composta
+//Anotação @Embeddable - Representa o encapsulando de dois campos de uma classe na tabela relacional
+//BelongingPK - Classe auxiliar para representar a chave primaria composta
 @Embeddable
 public class BelongingPK {
 
 	@ManyToOne
-    @JoinColumn(name = "game_id")
+    @JoinColumn(name = "game_id") //Nome da chave estrangeira
     private Game game;
 
     @ManyToOne
-    @JoinColumn(name = "list_id")
+    @JoinColumn(name = "list_id") //Nome da chave estrangeira
     private GameList list;
 
 	public Game getGame() {

@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_belonging")
 public class Belonging {
-    @EmbeddedId
+    @EmbeddedId //Representa o encapsulando de dois campos de uma classe(BelongingPK) na tabela relacional
     private BelongingPK id = new BelongingPK();
     private Integer position;
 
