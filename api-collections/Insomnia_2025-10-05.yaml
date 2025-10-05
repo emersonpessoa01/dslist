@@ -1,0 +1,107 @@
+type: collection.insomnia.rest/5.0
+name: Dslist
+meta:
+  id: wrk_af4c7cd5886640e8a73d6f1a2d37d833
+  created: 1755551398826
+  modified: 1755551398826
+  description: ""
+collection:
+  - url: "{{ _.url }}/games"
+    name: Listar games
+    meta:
+      id: req_835a64540a924b68a1c7d81899c2f964
+      created: 1755551432602
+      modified: 1755551466359
+      isPrivate: false
+      description: ""
+      sortKey: -1755551432602
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.url }}/games/2"
+    name: Listar games por id
+    meta:
+      id: req_196f98fabfd34dc7b459be37c9181593
+      created: 1759604444626
+      modified: 1759608778073
+      isPrivate: false
+      description: ""
+      sortKey: -1755212810879.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.url }}/lists"
+    name: Listas de Games
+    meta:
+      id: req_c77f06c077a047d58a19d9540129298e
+      created: 1759626211353
+      modified: 1759686510171
+      isPrivate: false
+      description: ""
+      sortKey: -1755043500018.25
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.url }}/lists/1/games"
+    name: Games por listas
+    meta:
+      id: req_ea7fc003c3ec41779374a48fb1b0c9b0
+      created: 1759686537248
+      modified: 1759688516223
+      isPrivate: false
+      description: ""
+      sortKey: -1754958844587.625
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9280299191516149e5186d37826edc64c16ea24b
+    created: 1755551398854
+    modified: 1755551398854
+environments:
+  name: Base Environment
+  meta:
+    id: env_9280299191516149e5186d37826edc64c16ea24b
+    created: 1755551398839
+    modified: 1759608754569
+    isPrivate: false
+  data:
+    url: http://localhost:8081
