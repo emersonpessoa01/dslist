@@ -205,3 +205,11 @@ https://gist.github.com/acenelio/5e40b27cfc40151e36beec1e27c4ff71
     docker ps
 
 ------------------------------------------------------------------------
+
+☁️ Aplicação implantada na nuvem com esteira de CI/CD
+
+A aplicação foi implantada na Railway, utilizando uma esteira automatizada de integração e entrega contínua (CI/CD) integrada ao GitHub.
+Cada merge na branch principal dispara um deploy automático para o ambiente de produção.
+
+![Implantação da Railway](../dslist/src/main/resources/static/img/postgres-railway-dslist.png)
+
