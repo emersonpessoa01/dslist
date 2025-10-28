@@ -213,3 +213,4 @@ Cada merge na branch principal dispara um deploy automático para o ambiente de 
 
 ![Implantação da Railway](../dslist/src/main/resources/static/img/postgres-railway-dslist.png)
 
+⚙️ 2️⃣ Para servir essa imagem via HTTP: http://localhost:8081/img/postgres-railway-dslist.png)
