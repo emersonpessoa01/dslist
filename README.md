@@ -217,6 +217,6 @@ https://gist.github.com/emersonpessoa01/a2459a00ab633ec2f24a6be6494a50ca
 A aplicação foi implantada na Railway, utilizando uma esteira automatizada de integração e entrega contínua (CI/CD) integrada ao GitHub.
 Cada merge na branch principal dispara um deploy automático para o ambiente de produção.
 
-![Railway](https://raw.githubusercontent.com/emersonpessoa01/dslist/main/docs/imagens/railway.png)
+![railway](https://raw.githubusercontent.com/emersonpessoa01/dslist/main/docs/imagens/railway.png)
 
 ⚙️ 2️⃣ Para servir essa imagem via HTTP: http://localhost:8081/img/postgres-railway-dslist.png)
