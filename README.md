@@ -138,14 +138,18 @@ public class WebConfig {
 
 ```java
 @Query(nativeQuery = true, value = """
-		SELECT tb_game.id, tb_game.title, tb_game.game_year AS `year`, tb_game.img_url AS imgUrl,
-		tb_game.short_description AS shortDescription, tb_belonging.position
-		FROM tb_game
-		INNER JOIN tb_belonging ON tb_game.id = tb_belonging.game_id
-		WHERE tb_belonging.list_id = :listId
-		ORDER BY tb_belonging.position
-			""")
-List<GameMinProjection> searchByList(Long listId);
+        SELECT g.id,
+               g.title,
+               g.game_year AS "year",
+               g.img_url AS imgUrl,
+               g.short_description AS shortDescription,
+               b.position
+        FROM tb_game g
+        INNER JOIN tb_belonging b ON g.id = b.game_id
+        WHERE b.list_id = :listId
+        ORDER BY b.position
+    """)
+	List<GameMinProjection> searchByList(Long listId);
 ```
 
 ### GameListRepository
@@ -211,6 +215,6 @@ https://gist.github.com/acenelio/5e40b27cfc40151e36beec1e27c4ff71
 A aplicação foi implantada na Railway, utilizando uma esteira automatizada de integração e entrega contínua (CI/CD) integrada ao GitHub.
 Cada merge na branch principal dispara um deploy automático para o ambiente de produção.
 
-![Implantação da Railway](../dslist/src/main/resources/static/img/postgres-railway-dslist.png)
-
+<div><img src="./src/main/resources/static/img/postgres-railway-dslist.png" width="auto"></div>
+<br>
 ⚙️ 2️⃣ Para servir essa imagem via HTTP: http://localhost:8081/img/postgres-railway-dslist.png)
