@@ -215,6 +215,6 @@ https://gist.github.com/acenelio/5e40b27cfc40151e36beec1e27c4ff71
 A aplicação foi implantada na Railway, utilizando uma esteira automatizada de integração e entrega contínua (CI/CD) integrada ao GitHub.
 Cada merge na branch principal dispara um deploy automático para o ambiente de produção.
 
-<div><img src="./src/main/resources/static/img/postgres-railway-dslist.png" width="auto"></div>
+<div><img src="./docs/imagens/postgres-railway-dslist.png" width="auto"></div>
 <br>
 ⚙️ 2️⃣ Para servir essa imagem via HTTP: http://localhost:8081/img/postgres-railway-dslist.png)
