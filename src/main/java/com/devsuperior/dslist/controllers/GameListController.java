@@ -29,7 +29,7 @@ public class GameListController {
         List<GameMinDTO> result = gameService.findByList(listId);
         return result;
     }
-    @PostMapping(value = "/{listId}/games")
+    @PostMapping(value = "/{listId}/replacement")
     public void move(@PathVariable Long listId,@RequestBody ReplacementDTO body ) {
         gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
     }
